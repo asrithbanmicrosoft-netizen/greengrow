@@ -1,0 +1,381 @@
+/* general styles */
+.mukta-medium ,html,body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-size: cover;
+}
+/* header and nav section */
+header {
+    position:absolute;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+header button {
+    margin-left: 20px; 
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+header button a {
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #3d614f;
+    border-radius: 5px;
+}
+
+header button a:hover {
+    background-color: #4d724f;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 9%;
+    transform: translateY(-50%);
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 2em;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    margin: 0;
+    background-position: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #3d614f;
+}
+
+/* home screen section */
+.hero {
+    background-image: url('assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 2em;
+    margin: 0;
+}
+.white-text {
+    color: white;
+}
+
+.green-text {
+    color: #2b5742;
+}
+.black-text{
+    color: #000000;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+.hero-content button {
+    padding: 0.5em 2em;
+    font-size: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+/* button in home section */
+#home button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #0011ff;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+#home button:hover {
+    background-color: #4b57ff;
+}
+
+/* booking section */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 300px;
+}
+
+.modal-content {
+    background-image: url("assets/hero.jpg");
+    background-size: cover;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #2b5742;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+
+    border: none; 
+    border-radius: 5px; 
+}
+
+
+#booking-form button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #00733b; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+#booking-form button:hover {
+    background-color: #8acfae;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* rooms section */
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card-content{
+    padding: 20px;
+}
+/* responsive design */
+@media only screen and (max-width:600px){
+    .card{
+        width: calc(50% - 40px);
+    }
+}
+@media only screen and (max-width:400px){
+    .card{
+        width: calc(100% - 40px);
+    }
+}
+/* main gallery section */
+
+#gallery button {
+    margin-left: 100px; 
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#gallery button a {
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #005a2d;
+    border-radius: 5px;
+}
+
+#gallery button a:hover {
+    background-color: #4d724f;
+}
+/* second gallery more section */
+#gallery button {
+    margin-left: 100px; 
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#gallery button a {
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #005a2d;
+    border-radius: 5px;
+}
+
+#gallery button a:hover {
+    background-color: #4d724f;
+}
+/* second gallery extramore section */
+#galleryextramore button {
+    margin-left: 100px; 
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+#galleryextramore button a {
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #005a2d;
+    border-radius: 5px;
+}
+
+#galleryextramore button a:hover {
+    background-color: #4d724f;
+}
+/* about section */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.item.reverse{
+    flex-direction: row-reverse;
+}
+.text {
+    flex: 1;
+    margin:0 20px;
+}
+
+.text h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.text p {
+    margin: 0;
+    color: #666;
+}
+
+.image {
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 600px; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+/* review section*/
+#review {
+    padding: 2em;
+    font-size: 20px;
+}
+#review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review-form label,
+#review-form input,
+#review-form textarea {
+    width: 20%;
+    margin: 0.5em 0;
+}
+
+#review-form button {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #00733b;
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+}
+
+#review-form button:hover {
+    background-color: #8acfae; 
+}
+label{
+    font-weight: bold;
+    font-size: 17px;
+}
+h2{
+    text-align: center;
+}
+
+/* Footer */
+.socialmedia img{
+    width: 100px;
+    aspect-ratio: 8/2;
+    object-fit: contain;
+}
+footer {
+    background-color: #2b5742;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+}
+
+

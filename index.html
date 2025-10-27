@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGrow</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap">
+</head>
+<body>
+
+    <!-- header and nav section-->
+    <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+    </div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#review">Review</a></li>
+            </ul>
+        </nav>
+        <button><a href="login.html">log in</a></button>
+        <button><a href="signin.html">sign in</a></button>
+    </header>
+
+    
+     <!-- home screen section-->
+     <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><span class="white-text">Welcome to</span> <span class="green-text">GreenGrow</span></h1>
+            <p><span class="black-text">Your comfort is our priority<br>our hotel combines luxurious accommodations with exceptional service.</span></p>
+            <button onclick="showBookingForm()">Book Now</button><br>
+        </div>
+    </section>
+
+    <!-- booking section -->
+    <div id="booking-form" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingForm()">&times;
+            </span>
+                <h2>Booking Form</h2>
+                    <form id="book-form" action="#" method="post">
+                        <label for="checkin">Check-in Date:</label>
+                            <input type="date" id="checkin" name="checkindate" required>
+                        <label for="checkout">Check-out Date:</label>
+                            <input type="date" id="checkout" name="checkoutdate" required>
+                        <label for="guests">Number of Guests:</label>
+                            <input type="number" id="guests" name="numberofguests" min="1" required>
+                            <button type="submit">Completed</button>
+                    </form>
+        </div>
+    </div>
+    
+    <!-- rooms section -->
+     <section id="rooms">
+        <h2>Our Rooms</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/room1.jpg" alt="room1 Image">
+                    <div class="card-content">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious and luxurious room with a beautiful view.</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/room2.jpg" alt="room2 Image">
+                    <div class="card-content">
+                        <h3>Standard Room</h3>
+                        <p>Comfortable room with all the basic amenities.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/room3.jpg" alt="room3 Image">
+                    <div class="card-content">
+                        <h3>Suite</h3>
+                        <p>Elegant and spacious suite with premium facilities.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- main gallery section -->
+
+     <section id="gallery">
+         <h2>Gallery</h2>
+        <div class="container">
+            <div class="item reverse">
+                <div class="text">
+                    <h2><button><a href="gallery.html">More Pictures</a></button></h2>
+                    <p>Inspired by the rich heritage and vibrant culture of Calicut,our founders envisioned a place where guests could enjoy modern conveniences while being 
+                    enveloped in local charm.We offer the best services to make your stay memorable.</p>
+                </div>
+                <div class="image">
+                    <img src="assets/gallery2.jpg" alt="about2 image">
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="container">
+            <div class="item">
+                <div class="text">
+                    <h3>Classic Elegance</h3>
+                    <p>Experience luxury and comfort at GreenGrow.GreenGrow was established in 2011 with a vision to create a sanctuary of comfort and luxury for travelers from around the world.</p>
+                </div>
+                <div class="image">
+                    <img src="assets/about1.jpg" alt="about1 image">
+                </div>
+            </div>
+            <div class="item reverse">
+                <div class="text">
+                    <h3> Boutique Charm</h3>
+                    <p>Inspired by the rich heritage and vibrant culture of Calicut,our founders envisioned a place where guests could enjoy modern conveniences while being 
+                    enveloped in local charm.We offer the best services to make your stay memorable.</p>
+                </div>
+                <div class="image">
+                    <img src="assets/about2.jpg" alt="about2 image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section id="review">
+        <h2>Review</h2>
+            <form id="review-form" action="#" method="post">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="off">
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                <label for="message">Message:</label>
+                    <textarea id="message" name="message" required autocomplete="off"></textarea>
+                    <button type="submit">Submit</button>
+            </form>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2024 GreenGrow. All rights reserved.</p>
+        <div class="socialmedia">
+            <img src="assets/instagram.png" alt="instagram">
+            <img src="assets/facebook.png" alt="facebook">
+            <img src="assets/twitter.png" alt="twitter">
+            <img src="assets/youtube.png" alt="youtube">
+        </div>
+        
+    </footer>
+
+
+    
+</body>
+</html>
+ 
+
+
+
